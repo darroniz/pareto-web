@@ -286,14 +286,15 @@ footer.footer--min .wrap{align-items:center;font-family:'Space Mono',monospace;f
 .has-drop>.dt{display:inline-flex;align-items:center;gap:.35em;cursor:pointer}
 .has-drop>.dt::after{content:"";width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .2s;opacity:.7}
 .has-drop:hover>.dt::after{transform:rotate(225deg) translateY(-1px)}
-.drop{position:absolute;top:calc(100% + 8px);left:0;transform:translateY(6px);
-  background:var(--cream-card);border:1px solid rgba(0,66,37,.12);border-radius:12px;padding:7px;
-  display:flex;flex-direction:column;gap:1px;min-width:226px;
-  box-shadow:0 16px 36px -20px rgba(0,66,37,.4);opacity:0;visibility:hidden;transition:opacity .18s,transform .18s,visibility .18s;z-index:60}
-.has-drop:hover .drop{opacity:1;visibility:visible;transform:translateY(0)}
-.drop a{display:block;padding:8px 12px;border-radius:8px;font-size:.92rem;font-weight:500;color:var(--ink);text-decoration:none;opacity:1;white-space:nowrap;transition:background .15s,color .15s}
-.drop a small{display:none}
+.drop{position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%) translateY(6px);
+  background:var(--cream-card);border:1px solid rgba(0,66,37,.13);border-radius:16px;padding:10px;
+  display:grid;grid-template-columns:1fr 1fr;gap:2px;min-width:440px;
+  box-shadow:0 22px 48px -24px rgba(0,66,37,.42);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility .2s;z-index:60}
+.has-drop:hover .drop{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.drop a{display:block;padding:10px 13px;border-radius:10px;font-size:.92rem;font-weight:600;color:var(--ink);text-decoration:none;opacity:1;transition:background .15s,color .15s}
+.drop a small{display:block;font-weight:400;font-size:.76rem;color:var(--muted);margin-top:1px}
 .drop a:hover{background:var(--cream);color:var(--green)}
+.drop a:hover small{color:var(--green)}
 
 /* ---------- ILUSTRACIONES CONCEPTUALES (estilo Senda) ---------- */
 .ill{display:block;margin:0 auto;max-width:100%}
