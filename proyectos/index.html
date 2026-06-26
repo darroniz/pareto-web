@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyectos — Casos reales en producción | Pareto</title>
+<meta name="description" content="Portfolio de Pareto: integraciones de ERP, migraciones a Docker, apps Flutter, e-commerce y CRO. Casos reales en producción, con el número cuando lo hay y 'en curso' cuando todavía no.">
+<link rel="canonical" href="https://paretoconversion.com/proyectos/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,400;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="/" class="brand" aria-label="Pareto"><svg><use href="/assets/logo-sprite.svg#logo-pareto"/></svg></a>
+    <nav class="nav-links">
+      <a href="/#servicios">Qué hacemos</a>
+      <a href="/proyectos/">Proyectos</a>
+      <a href="/estudio/">Estudio</a>
+      <a href="/contacto/" class="pill pill--dark">Hablar con nosotros<span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO portfolio -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-card hero-card--center">
+      <div class="hero-grid"></div>
+      <span class="kicker">Portfolio · casos reales</span>
+      <h1>Casos reales, en <span class="accent serif">producción</span></h1>
+      <p class="lead">Sin maquillaje: lo que está funcionando hoy para clientes reales, con el número cuando lo hay y marcado "en curso" cuando todavía no lo está.</p>
+      <div class="hero-cta">
+        <a href="/contacto/" class="pill pill--light">Cuéntanos tu idea<span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIER 1 — en producción / con número -->
+<section>
+  <div class="wrap">
+    <div class="shead">
+      <span class="kicker">01 — En producción</span>
+      <h2>Lo que ya está funcionando</h2>
+      <p>Proyectos desplegados y verificados. Cada uno con su dato real: el que podemos medir, no el que suena bien.</p>
+    </div>
+    <div class="projects">
+      <a class="proj" href="/proyectos/civic/">
+        <div class="proj-top"><h3>Civic Consultores</h3><span class="tag">Integración ERP</span></div>
+        <p>Plugin a medida que sincroniza Holded con su intranet (Playwright + GitHub Actions), buscador multicampo sin acentos y espejo a Google Calendar.</p>
+        <div class="metric"><span class="big">v1.7.3<span class="yh"> en PRO</span></span><span class="lbl">33 campos mapeados · cliente recurrente</span></div>
+      </a>
+      <a class="proj" href="/proyectos/bluetechport/">
+        <div class="proj-top"><h3>BlueTechPort</h3><span class="tag">Migración / Infra</span></div>
+        <p>Drupal en bare-metal migrado a Docker / Portainer en VPS, con TLS premontado y reversión documentada.</p>
+        <div class="metric"><span class="big">Cero<span class="yh"> downtime</span></span><span class="lbl">BD 130 MB + 598 MB ficheros · HTTP 200 verificado</span></div>
+      </a>
+      <a class="proj" href="/proyectos/imc/">
+        <div class="proj-top"><h3>IMC · Consumo Madrid</h3><span class="tag">Marca pública + datos</span></div>
+        <p>Diagnóstico de contenidos que identificó Reels como único formato con tracción, y rediseño operativo del contrato.</p>
+        <div class="metric"><span class="big">5,8%<span class="yh"> ER Reels</span></span><span class="lbl">1.724 views media vs &lt;300 en foto · contrato 24 meses</span></div>
+      </a>
+      <a class="proj" href="/proyectos/accademia/">
+        <div class="proj-top"><h3>Accademia Club</h3><span class="tag">App Flutter · en curso</span></div>
+        <p>App nativa iOS+Android con backend Supabase, reemplazando un stack FlutterFlow+Firebase. De cero a MVP funcional en una semana.</p>
+        <div class="metric"><span class="big">~1<span class="yh"> semana</span></span><span class="lbl">MVP completo · pendiente publicar en stores</span></div>
+      </a>
+      <div class="proj">
+        <div class="proj-top"><h3>Impossible Parts</h3><span class="tag">E-commerce / tracking</span></div>
+        <p>Tracking de conversiones en Shopify (GTM→Ads) y sincronización mensual de inventario por email/IMAP, idempotente.</p>
+        <div class="metric"><span class="big">6<span class="yh"> eventos</span></span><span class="lbl">GTM→Ads operando · sync de inventario automatizado</span></div>
+      </div>
+      <div class="proj">
+        <div class="proj-top"><h3>Velltec</h3><span class="tag">Web app · DevOps</span></div>
+        <p>Web app de gestión clínica de sesiones. Resolvimos un bug crítico de lógica por zona que impedía registrar sesiones.</p>
+        <div class="metric"><span class="big">Fix<span class="yh"> en PRO</span></span><span class="lbl">desplegado y verificado · rollback disponible, sin regresión</span></div>
+      </div>
+      <div class="proj">
+        <div class="proj-top"><h3>Futureface</h3><span class="tag">Saneamiento catálogo</span></div>
+        <p>Corregido el etiquetado de 17 productos cruzados entre marcas y montado el localizador de puntos de venta.</p>
+        <div class="metric"><span class="big">0<span class="yh"> fugas</span></span><span class="lbl">entre marcas tras la corrección · recuento verificado</span></div>
+      </div>
+      <div class="proj">
+        <div class="proj-top"><h3>Cayro Woman</h3><span class="tag">Auditoría SEO + CRO</span></div>
+        <p>Auditoría de 578 páginas que detectó un error 500 en checkout bloqueando todas las conversiones de Ads, Meta y GA4.</p>
+        <div class="metric"><span class="big">+25.000<span class="yh"> clics/mes</span></span><span class="lbl">de potencial · error 500 en checkout detectado</span></div>
+      </div>
+      <div class="proj">
+        <div class="proj-top"><h3>Shabby &amp; Chic</h3><span class="tag">SEM + CRM</span></div>
+        <p>Embudo form→Zoho con GCLID, lead scoring de 5 microconversiones y cruce diario Lead↔Oportunidad en n8n.</p>
+        <div class="metric"><span class="big">En vivo<span class="yh"> hoy</span></span><span class="lbl">leads automáticos confirmados · optimización en curso</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIER 2 — en curso -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="shead">
+      <span class="kicker">02 — En curso</span>
+      <h2>Construido, pendiente de su número</h2>
+      <p>Trabajo hecho y en marcha, todavía sin go-live o sin resultado de negocio cerrado. Lo contamos por lo que es, no por lo que esperamos.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <span class="lab">App · iOS + Android</span>
+        <h3>ActivandODS</h3>
+        <p>App location-based (PostGIS) con Apple Sign-In nativo, publicada en las stores con CI de iOS montado desde Linux, sin un Mac de por medio.</p>
+      </div>
+      <div class="card">
+        <span class="lab">CRO · estética</span>
+        <h3>Carol de la Rosa</h3>
+        <p>Gap de conversión diagnosticado, landings rediseñadas y formulario reducido de 14 a 3 campos. Pendiente de test en vivo.</p>
+      </div>
+      <div class="card">
+        <span class="lab">Landing · SEM</span>
+        <h3>Dongfeng</h3>
+        <p>Brief CRO completo y landing de test drive reposicionada, mobile-first. Pendiente de desarrollo y puesta en marcha.</p>
+      </div>
+      <div class="card">
+        <span class="lab">Lead gen · B2B</span>
+        <h3>INNN</h3>
+        <p>Estructura de captación Meta→WhatsApp→Sheet con criterios go/no-go y tracking definido. Pendiente de activación con el cliente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="contacto-preview">
+  <div class="wrap">
+    <div class="final">
+      <div>
+        <span class="kicker">Hablemos</span>
+        <h2 style="margin-top:14px">¿Tienes un proyecto? Te decimos si lo podemos <span class="serif">construir</span></h2>
+        <p class="lead">Cuéntanos tu idea y te respondemos en 48&nbsp;h con si la podemos construir y cuánto cuesta.</p>
+        <div class="note">Estos son los casos que podemos enseñar. Los que no salen aquí siguen siendo <b>tuyos y privados</b>.</div>
+        <div class="final-cta">
+          <a href="/contacto/" class="pill pill--dark">Agenda 30 min<span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        </div>
+        <div class="ts" id="stamp">26/06/2026 – 06:13:56</div>
+      </div>
+      <div class="scene">
+        <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
+          <defs>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a5733"/><stop offset="1" stop-color="#0f6b3f"/></linearGradient>
+            <linearGradient id="mt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#06351e"/><stop offset="1" stop-color="#004225"/></linearGradient>
+          </defs>
+          <rect width="400" height="400" fill="url(#sky)"/>
+          <circle cx="300" cy="92" r="34" fill="#f6f7f2" opacity="0.85"/>
+          <path d="M0 250 L90 150 L150 230 L230 120 L300 220 L400 140 L400 400 L0 400 Z" fill="url(#mt)"/>
+          <path d="M0 300 L80 230 L160 300 L250 215 L340 300 L400 250 L400 400 L0 400 Z" fill="#06351e"/>
+          <path d="M230 120 L210 150 L250 150 Z" fill="#f7f5ef" opacity="0.85"/>
+          <path d="M90 150 L78 172 L104 172 Z" fill="#f7f5ef" opacity="0.7"/>
+          <rect x="186" y="318" width="16" height="40" fill="#06351e"/>
+          <rect x="178" y="300" width="32" height="22" rx="3" fill="#c3fa95"/>
+          <rect x="206" y="305" width="9" height="6" fill="#06351e"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a href="/" class="brand" aria-label="Pareto"><svg><use href="/assets/logo-sprite.svg#logo-pareto"/></svg></a>
+      <p class="ftxt">Estudio de desarrollo de producto digital. Tecnología con criterio de negocio.</p>
+    </div>
+    <div class="col"><h5>Servicios</h5><a href="/desarrollo-de-apps/">Apps a medida</a><a href="/software-a-medida/">Software a medida</a><a href="/integraciones/">Integraciones &amp; IA</a><a href="/desarrollo-ecommerce/">E-commerce</a></div>
+    <div class="col"><h5>Estudio</h5><a href="/proyectos/">Proyectos</a><a href="/estudio/">Cómo trabajamos</a><a href="/contacto/">Contacto</a></div>
+    <div class="col"><h5>Contacto</h5><a href="mailto:hola@paretoconversion.com">hola@paretoconversion.com</a><a href="/contacto/">Agenda una llamada</a></div>
+    <div class="legal">
+      <span>© 2026 Pareto · ICB Spain Investment SL</span>
+      <span><a href="/aviso-legal/" style="display:inline">Aviso legal</a> · <a href="/privacidad/" style="display:inline">Privacidad</a> · <a href="/cookies/" style="display:inline">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function tick(){var d=new Date();function p(n){return String(n).padStart(2,'0')}
+    var s=p(d.getDate())+'/'+p(d.getMonth()+1)+'/'+d.getFullYear()+' – '+p(d.getHours())+':'+p(d.getMinutes())+':'+p(d.getSeconds());
+    var el=document.getElementById('stamp');if(el)el.textContent=s;}
+  tick();setInterval(tick,1000);
+</script>
+</body>
+</html>

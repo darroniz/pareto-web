@@ -1,0 +1,6 @@
+# Dev artifacts
+_PARTIALS.html
+.DS_Store
+*.log
+node_modules/
+.vscode/

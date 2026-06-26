@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caso Civic Consultores — Integración Holded ↔ intranet | Pareto</title>
+<meta name="description" content="Sincronizamos el ERP Holded con la intranet de Civic Consultores sin API oficial, con un plugin WordPress a medida (Playwright + GitHub Actions). Plugin v1.7.3 en producción.">
+<link rel="canonical" href="https://paretoconversion.com/proyectos/civic">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,400;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+<!-- ░░░ HEADER COMPLETO ░░░ -->
+<header>
+  <div class="wrap nav">
+    <a href="/" class="brand" aria-label="Pareto"><svg><use href="/assets/logo-sprite.svg#logo-pareto"/></svg></a>
+    <nav class="nav-links">
+      <a href="/#servicios">Qué hacemos</a>
+      <a href="/proyectos/">Proyectos</a>
+      <a href="/estudio/">Estudio</a>
+      <a href="/contacto/" class="pill pill--dark">Hablar con nosotros<span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-card">
+      <div class="hero-grid"></div>
+      <span class="kicker">Caso · Integración ERP</span>
+      <h1>Civic Consultores</h1>
+      <p class="lead">Sincronizamos su ERP con su intranet sin que existiera una API oficial, con un plugin a medida que trabaja solo. Datos al día, sin copiar y pegar.</p>
+      <div class="metric" style="border-top:1px dashed rgba(247,245,239,.3);padding-top:16px;display:flex;align-items:baseline;gap:10px">
+        <span class="big" style="color:var(--accent);font-size:1.8rem;font-weight:700">v1.7.3<span class="yh" style="font-family:'Fraunces',serif;font-style:italic;font-weight:500"> en producción</span></span>
+        <span class="lbl" style="color:rgba(247,245,239,.7);font-size:.9rem">33 campos mapeados · cliente recurrente</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STRIP -->
+<div class="strip">
+  <div class="wrap">
+    <span class="seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> En producción</span>
+    <span class="dot">·</span><span>WordPress</span><span class="dot">·</span><span>Playwright</span><span class="dot">·</span><span>GitHub Actions</span><span class="dot">·</span><span>Holded API</span>
+  </div>
+</div>
+
+<!-- EL RETO -->
+<section>
+  <div class="wrap">
+    <div class="shead">
+      <span class="kicker">El reto</span>
+      <h2>Un ERP y una intranet que no se hablaban</h2>
+    </div>
+    <div class="prose">
+      <p>Civic gestiona su información en Holded, pero su intranet vivía aparte. Holded no expone una API oficial para lo que necesitaban, así que la sincronización se hacía <b>a mano</b>: alguien copiaba datos de un sistema a otro.</p>
+      <p>El resultado era el previsible: información desactualizada, trabajo repetitivo y margen de error en cada volcado. Necesitaban que los dos sistemas estuvieran al día sin depender de que nadie se acordara de actualizarlos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ HICIMOS -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="shead">
+      <span class="kicker">Qué hicimos</span>
+      <h2>Un plugin a medida que sincroniza solo</h2>
+    </div>
+    <div class="prose">
+      <p>Construimos un <b>plugin de WordPress a medida</b> que lleva los datos de Holded a su intranet de forma desatendida. Como no había API oficial, automatizamos la extracción con <b>Playwright</b> y la orquestamos con <b>GitHub Actions</b>, de modo que la sincronización se ejecuta sola en segundo plano.</p>
+    </div>
+    <div class="includes" style="margin-top:30px">
+      <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Sincronización Holded → intranet</b><p>Playwright + GitHub Actions, sin API oficial y sin intervención manual.</p></div></div>
+      <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>33 custom fields mapeados</b><p>Cada dato de Holded en su sitio dentro de la intranet.</p></div></div>
+      <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Buscador multicampo sin acentos</b><p>Encontrar es inmediato, escribas como escribas el nombre.</p></div></div>
+      <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Espejo a Google Calendar</b><p>Lo relevante se refleja en su calendario automáticamente.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EL RESULTADO -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="shead">
+      <span class="kicker">El resultado</span>
+      <h2>Sincronización desatendida, en producción</h2>
+    </div>
+    <div class="prose">
+      <p>El plugin está <b>en producción en su versión v1.7.3</b>: los datos viajan solos de Holded a la intranet, sin volcados manuales y sin la información envejeciendo entre actualizaciones.</p>
+      <p>Civic es hoy un <b>cliente recurrente</b>: seguimos manteniendo y evolucionando el plugin versión a versión.</p>
+    </div>
+    <div class="strip" style="margin-top:30px;border-radius:18px">
+      <div class="wrap">
+        <span>WordPress</span><span class="dot">·</span><span>Playwright</span><span class="dot">·</span><span>GitHub Actions</span><span class="dot">·</span><span>Holded API</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="contact" id="contacto" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact-card">
+      <div class="hero-grid"></div>
+      <div class="contact-inner">
+        <div>
+          <span class="kicker">¿Tienes dos sistemas que no se hablan?</span>
+          <h2>Te lo dejamos sincronizado y <span class="serif">funcionando</span>.</h2>
+          <p class="lead">Cuéntanos qué herramientas usas y te decimos en 48&nbsp;h si podemos conectarlas y cuánto cuesta.</p>
+          <div class="reassure">
+            <div><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Respuesta en menos de 48 h</div>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Integraciones en producción, no demos</div>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> El código siempre es tuyo</div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;justify-content:center;gap:16px">
+          <a href="/contacto/" class="pill pill--accent">Cuéntanos tu caso<span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a href="/proyectos/" class="pill pill--ghost-light">Ver todos los proyectos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░░ FOOTER COMPLETO ░░░ -->
+<footer>
+  <div class="wrap">
+    <div>
+      <a href="/" class="brand" aria-label="Pareto"><svg><use href="/assets/logo-sprite.svg#logo-pareto"/></svg></a>
+      <p class="ftxt">Estudio de desarrollo de producto digital. Tecnología con criterio de negocio.</p>
+    </div>
+    <div class="col">
+      <h5>Servicios</h5>
+      <a href="/desarrollo-de-apps/">Apps a medida</a>
+      <a href="/software-a-medida/">Software a medida</a>
+      <a href="/integraciones/">Integraciones &amp; IA</a>
+      <a href="/desarrollo-ecommerce/">E-commerce</a>
+    </div>
+    <div class="col">
+      <h5>Estudio</h5>
+      <a href="/proyectos/">Proyectos</a>
+      <a href="/estudio/">Cómo trabajamos</a>
+      <a href="/contacto/">Contacto</a>
+    </div>
+    <div class="col">
+      <h5>Contacto</h5>
+      <a href="mailto:hola@paretoconversion.com">hola@paretoconversion.com</a>
+      <a href="/contacto/">Agenda una llamada</a>
+    </div>
+    <div class="legal">
+      <span>© 2026 Pareto · ICB Spain Investment SL</span>
+      <span><a href="/aviso-legal/" style="display:inline">Aviso legal</a> · <a href="/privacidad/" style="display:inline">Privacidad</a> · <a href="/cookies/" style="display:inline">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

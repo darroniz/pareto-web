@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automatización de procesos con IA (n8n, Make) | Pareto</title>
+<meta name="description" content="Automatizamos los procesos manuales de tu empresa con n8n y Make: flujos fiables y desatendidos para que tu equipo deje de copiar y pegar entre herramientas.">
+<link rel="canonical" href="https://paretoconversion.com/automatizacion-de-procesos">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,400;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+
+<!-- HEADER mínimo: logo + 1 CTA. Sin menú que disperse (regla CRO) -->
+<header>
+  <div class="wrap nav">
+    <a href="/" style="color:var(--green);display:block" aria-label="Pareto">
+      <svg style="height:26px;width:111px;display:block"><use href="/assets/logo-sprite.svg#logo-pareto"/></svg>
+    </a>
+    <div class="nav-right">
+      <span class="back mono" style="display:none">Automatización</span>
+      <a href="#contacto" class="pill pill--dark">Automatiza tu proceso<span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-card">
+      <div class="hero-grid"></div>
+      <div class="hero-inner">
+        <div>
+          <span class="kicker">Automatización de procesos · n8n + Make</span>
+          <h1>Que tu equipo deje de <span class="serif accent">copiar y pegar</span> entre herramientas.</h1>
+          <p class="lead">Automatizamos con IA los procesos manuales de tu empresa: flujos fiables que corren solos, sin que nadie esté pendiente y sin errores de tecla.</p>
+          <div class="hero-cta">
+            <a href="#contacto" class="pill pill--accent">Automatiza tu proceso<span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          </div>
+          <div class="microproof"><span class="dotg"></span> Flujos en producción corriendo a diario</div>
+        </div>
+        <svg class="phone" viewBox="0 0 200 380" fill="none" stroke="rgba(247,245,239,.45)" stroke-width="1.4" aria-hidden="true">
+          <rect x="56" y="20" width="88" height="40" rx="10" stroke="var(--accent)"/>
+          <line x1="74" y1="40" x2="126" y2="40"/>
+          <line x1="100" y1="60" x2="100" y2="92"/>
+          <rect x="56" y="92" width="88" height="40" rx="10"/>
+          <line x1="74" y1="112" x2="126" y2="112"/>
+          <line x1="100" y1="132" x2="100" y2="164"/>
+          <path d="M100 164 L132 184 L100 204 L68 184 Z" stroke="var(--accent)"/>
+          <line x1="68" y1="184" x2="20" y2="184"/><line x1="20" y1="184" x2="20" y2="236"/>
+          <line x1="132" y1="184" x2="180" y2="184"/><line x1="180" y1="184" x2="180" y2="236"/>
+          <rect x="2" y="236" width="56" height="34" rx="9"/>
+          <rect x="152" y="236" width="46" height="34" rx="9" stroke="var(--accent)"/>
+          <line x1="100" y1="204" x2="100" y2="300"/>
+          <rect x="44" y="300" width="112" height="44" rx="11"/>
+          <line x1="62" y1="318" x2="138" y2="318"/><line x1="62" y1="330" x2="112" y2="330"/>
+          <circle cx="100" cy="362" r="9" fill="var(--accent)" stroke="none"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="strip">
+  <div class="wrap">
+    <span class="seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Flujos desatendidos en producción</span>
+    <span class="dot">·</span><span>n8n</span><span class="dot">·</span><span>Make</span>
+    <span class="dot">·</span><span>Webhooks</span><span class="dot">·</span><span>IMAP/Email</span><span class="dot">·</span><span>Google Sheets</span><span class="dot">·</span><span>WhatsApp</span>
+  </div>
+</div>
+
+<!-- PROBLEMA (empatía) -->
+<section>
+  <div class="wrap">
+    <div class="problem">
+      <div class="wrap">
+        <span class="kicker">El problema</span>
+        <h2>Tu equipo pierde horas moviendo datos de una pestaña a otra a mano.</h2>
+        <div class="pains">
+          <div class="pain"><span class="x">✕ repetitivo</span><p>Copiar leads, pegar pedidos, actualizar una hoja: trabajo de máquina hecho por personas, todos los días.</p></div>
+          <div class="pain"><span class="x">✕ frágil</span><p>Depende de que alguien se acuerde. El día que se olvida o se equivoca de celda, el dato se pierde.</p></div>
+          <div class="pain"><span class="x">✕ sin trazas</span><p>Cuando algo falla nadie sabe dónde ni por qué, y rehacerlo cuesta más que el proceso entero.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUCIÓN + QUÉ INCLUYE -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="shead">
+      <span class="kicker">La solución</span>
+      <h2>Montamos el flujo que conecta tus herramientas y corre solo.</h2>
+      <p>Diseñamos la automatización en n8n o Make sobre las herramientas que ya usas, con reintentos y avisos si algo se tuerce. Tú ves el resultado; la máquina hace el trabajo.</p>
+    </div>
+    <div class="includes">
+      <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Mapa del proceso</b><p>Dibujamos contigo el flujo real antes de automatizar nada.</p></div></div>
+      <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Flujo en n8n o Make</b><p>Construido sobre tus apps actuales, sin migrar nada.</p></div></div>
+      <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Criterios go / no-go</b><p>Reglas que deciden qué pasa y qué se descarta, en automático.</p></div></div>
+      <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Reintentos y avisos</b><p>Si una pieza falla, reintenta y te avisa. Nada se pierde en silencio.</p></div></div>
+      <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Idempotencia</b><p>Aunque algo se ejecute dos veces, no duplica ni corrompe datos.</p></div></div>
+      <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Documentación y traspaso</b><p>Te dejamos el flujo documentado para que sepas qué hace y por qué.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="shead center">
+      <span class="kicker">Cómo trabajamos</span>
+      <h2>Del proceso manual al flujo desatendido en 4 pasos</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="n">01</span><h3>Mapeamos el proceso</h3><p>Vemos cómo lo haces hoy a mano y dónde están las fugas de tiempo.</p></div>
+      <div class="step"><span class="n">02</span><h3>Diseñamos el flujo</h3><p>Definimos disparadores, reglas go/no-go y qué herramientas se conectan.</p></div>
+      <div class="step"><span class="n">03</span><h3>Construimos y probamos</h3><p>Montamos en n8n o Make y lo probamos con tus datos reales.</p></div>
+      <div class="step"><span class="n">04</span><h3>Lo dejamos corriendo</h3><p>Queda desatendido, con avisos si algo falla y todo documentado.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CASOS (prueba con número) -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="shead">
+      <span class="kicker">Prueba, no promesa</span>
+      <h2>Flujos que ya corren solos para nuestros clientes</h2>
+    </div>
+    <div class="cases">
+      <article class="case">
+        <div class="case-top"><h3>Shabby &amp; Chic</h3><span class="tag">n8n · CRM</span></div>
+        <p>Cruce diario entre Lead y Oportunidad en n8n para mantener el CRM al día sin tocarlo a mano. Los leads automáticos quedaron confirmados el 29 de mayo y el workflow corre cada día.</p>
+        <div class="metric"><span class="big">A <span class="yh">diario</span></span><span class="lbl">cruce Lead↔Oportunidad desatendido</span></div>
+      </article>
+      <article class="case">
+        <div class="case-top"><h3>Impossible Parts</h3><span class="tag">IMAP · Inventario</span></div>
+        <p>Sincronización de inventario que lee los correos entrantes (IMAP) y actualiza el stock de forma idempotente: aunque un mensaje se procese dos veces, no duplica. En funcionamiento.</p>
+        <div class="metric"><span class="big">Sin <span class="yh">duplicados</span></span><span class="lbl">sincronización de stock por email</span></div>
+      </article>
+      <article class="case">
+        <div class="case-top"><h3>INNN · Forma Cerámicas</h3><span class="tag">Meta · WhatsApp · Sheets</span></div>
+        <p>Flujo que recoge los leads de Meta, los filtra con criterios go/no-go y los lleva a WhatsApp y a una Google Sheet. El ROI de 12x es un objetivo estimado, pendiente de validar con el cliente.</p>
+        <div class="metric"><span class="big">12x <span class="yh">ROI</span></span><span class="lbl">objetivo estimado, a confirmar</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ NOSOTROS -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="why">
+      <div class="wrap">
+        <div>
+          <span class="kicker">Por qué nosotros</span>
+          <h2>Automatizamos para que <span class="serif">funcione sin ti</span>.</h2>
+        </div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Pensamos el flujo para el día que algo falla: reintentos, avisos e idempotencia de serie.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Trabajamos sobre tus herramientas actuales: no te obligamos a migrar de software.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> n8n o Make según el caso, no por moda: elegimos lo que te conviene a ti.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Te dejamos el flujo documentado y entendible, sin cajas negras.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ (resuelve objeciones + schema) -->
+<section style="padding-top:0">
+  <div class="wrap" style="max-width:840px">
+    <div class="shead center">
+      <span class="kicker">Dudas frecuentes</span>
+      <h2>Lo que sueles preguntarte antes de automatizar</h2>
+    </div>
+    <div class="faq">
+      <details open><summary>¿Qué procesos puedo automatizar?<span class="plus"></span></summary><div class="ans">Casi cualquier tarea repetitiva entre herramientas: mover leads de un formulario al CRM, sincronizar inventario, pasar pedidos a una hoja, avisar por WhatsApp o email, generar informes. Si hoy lo haces copiando y pegando, probablemente se automatiza.</div></details>
+      <details><summary>¿n8n o Make?<span class="plus"></span></summary><div class="ans">Depende de tu caso. Make es más rápido de montar para flujos sencillos; n8n da más control, lógica avanzada y opción de alojarlo tú mismo. Elegimos según volumen, complejidad y a quién pertenece el flujo. No cobramos por la marca de la herramienta.</div></details>
+      <details><summary>¿Qué pasa si algo falla?<span class="plus"></span></summary><div class="ans">Los flujos llevan reintentos y avisos: si una pieza falla, lo intenta de nuevo y te notifica. Además los diseñamos idempotentes, así que aunque algo se ejecute dos veces no duplica ni corrompe datos. Nada se pierde en silencio.</div></details>
+      <details><summary>¿Cuánto cuesta?<span class="plus"></span></summary><div class="ans">Trabajamos con <b>precio cerrado por flujo</b>, según lo que conecte y su complejidad, no por horas. Cuéntanos el proceso y te damos una cifra en 48 h, sin compromiso. El coste de las herramientas (licencia de Make o servidor de n8n) es aparte y explícito.</div></details>
+      <details><summary>¿Necesito cambiar mis herramientas?<span class="plus"></span></summary><div class="ans">No. Automatizamos sobre lo que ya usas. El objetivo es conectar tus herramientas actuales, no obligarte a migrar a otras nuevas.</div></details>
+      <details><summary>¿Quién mantiene el flujo después?<span class="plus"></span></summary><div class="ans">Tú decides. Ofrecemos mantenimiento con una cuota aparte para vigilarlo y adaptarlo cuando cambie una herramienta o un proceso; si prefieres llevarlo internamente, te lo dejamos documentado para hacerlo.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO + FORM (objetivo único, 3 campos) -->
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <div class="contact-card">
+      <div class="hero-grid"></div>
+      <div class="contact-inner">
+        <div>
+          <span class="kicker">Hablemos</span>
+          <h2>Cuéntanos qué proceso te roba tiempo y lo <span class="serif">automatizamos</span>.</h2>
+          <p class="lead">Te decimos en <b>48 h</b> si se puede automatizar y cuánto cuesta. Sin compromiso.</p>
+          <div class="reassure">
+            <div><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Respuesta con precio cerrado en 48 h</div>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Flujos ya corriendo a diario en clientes reales</div>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Sobre tus herramientas actuales, sin migrar</div>
+          </div>
+        </div>
+        <form id="lead-form" novalidate>
+          <div class="form-fields">
+            <div class="field">
+              <label for="nombre">Tu nombre</label>
+              <input id="nombre" name="nombre" type="text" placeholder="Nombre y apellidos" required>
+            </div>
+            <div class="field">
+              <label for="contacto">Email o teléfono</label>
+              <input id="contacto" name="contacto" type="text" placeholder="Para devolverte la respuesta" required>
+            </div>
+            <div class="field">
+              <label for="idea">¿Qué proceso quieres automatizar?</label>
+              <textarea id="idea" name="idea" placeholder="Cuéntanos en dos líneas qué haces hoy a mano" required></textarea>
+            </div>
+            <button type="submit" class="pill pill--accent">Enviar mi proceso<span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+            <p class="privacy">Al enviar aceptas nuestra <a href="/privacidad/">política de privacidad</a>. Cero spam.</p>
+          </div>
+          <div class="form-ok" id="form-ok">
+            <div class="big">¡Recibido! 🎉</div>
+            <p style="color:#46564f">Te respondemos en menos de 48 h con si se puede automatizar y cuánto cuesta.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer--min">
+  <div class="wrap">
+    <a href="/" class="brand" aria-label="Pareto"><svg><use href="/assets/logo-sprite.svg#logo-pareto"/></svg></a>
+    <span><a href="/aviso-legal/">Aviso legal</a> · <a href="/privacidad/">Privacidad</a> · © 2026 ICB Spain Investment SL</span>
+  </div>
+</footer>
+
+<!-- Schema: Service + FAQPage (GEO + rich results) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Service",
+      "serviceType":"Automatización de procesos con IA (n8n, Make)",
+      "provider":{"@type":"Organization","name":"Pareto","url":"https://paretoconversion.com"},
+      "areaServed":"ES",
+      "description":"Automatización de procesos empresariales con n8n y Make: flujos fiables y desatendidos que conectan las herramientas que ya usas, con reintentos, avisos e idempotencia."
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"¿Qué procesos puedo automatizar?","acceptedAnswer":{"@type":"Answer","text":"Casi cualquier tarea repetitiva entre herramientas: mover leads al CRM, sincronizar inventario, pasar pedidos a una hoja, avisar por WhatsApp o email, generar informes. Si hoy lo haces copiando y pegando, probablemente se automatiza."}},
+        {"@type":"Question","name":"¿n8n o Make?","acceptedAnswer":{"@type":"Answer","text":"Depende del caso. Make es más rápido para flujos sencillos; n8n da más control, lógica avanzada y opción de alojarlo tú mismo. Elegimos según volumen, complejidad y a quién pertenece el flujo."}},
+        {"@type":"Question","name":"¿Qué pasa si algo falla en el flujo?","acceptedAnswer":{"@type":"Answer","text":"Los flujos llevan reintentos y avisos: si una pieza falla, lo intenta de nuevo y te notifica. Además son idempotentes, así que aunque algo se ejecute dos veces no duplica ni corrompe datos."}},
+        {"@type":"Question","name":"¿Cuánto cuesta automatizar un proceso?","acceptedAnswer":{"@type":"Answer","text":"Trabajamos con precio cerrado por flujo, según lo que conecte y su complejidad, no por horas. Te damos una cifra en 48 horas sin compromiso. El coste de las herramientas es aparte y explícito."}},
+        {"@type":"Question","name":"¿Necesito cambiar mis herramientas?","acceptedAnswer":{"@type":"Answer","text":"No. Automatizamos sobre las herramientas que ya usas. El objetivo es conectarlas, no obligarte a migrar a otras nuevas."}},
+        {"@type":"Question","name":"¿Quién mantiene el flujo después?","acceptedAnswer":{"@type":"Answer","text":"Tú decides. Ofrecemos mantenimiento con una cuota aparte para vigilarlo y adaptarlo, o te dejamos todo documentado para llevarlo internamente."}}
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+  // Form demo: estado de éxito (pendiente conectar endpoint real)
+  var f=document.getElementById('lead-form');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var ff=document.querySelector('.form-fields'), ok=document.getElementById('form-ok');
+    if(!f.checkValidity()){f.reportValidity&&f.reportValidity();return;}
+    ff.style.display='none'; ok.classList.add('show');
+    // TODO: POST a endpoint (Formspree/handler propio) + evento de conversión GTM
+  });
+</script>
+</body>
+</html>

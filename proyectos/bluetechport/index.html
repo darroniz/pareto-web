@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caso BlueTechPort — Migración de Drupal a Docker sin downtime | Pareto</title>
+<meta name="description" content="Migramos el Drupal de BlueTechPort de un bare-metal caro y frágil a Docker/Portainer en VPS, con TLS premontado y reversión documentada. Funcional en VPS, HTTP 200 verificado, cero downtime.">
+<link rel="canonical" href="https://paretoconversion.com/proyectos/bluetechport">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,400;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+<!-- ░░░ HEADER COMPLETO ░░░ -->
+<header>
+  <div class="wrap nav">
+    <a href="/" class="brand" aria-label="Pareto"><svg><use href="/assets/logo-sprite.svg#logo-pareto"/></svg></a>
+    <nav class="nav-links">
+      <a href="/#servicios">Qué hacemos</a>
+      <a href="/proyectos/">Proyectos</a>
+      <a href="/estudio/">Estudio</a>
+      <a href="/contacto/" class="pill pill--dark">Hablar con nosotros<span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-card">
+      <div class="hero-grid"></div>
+      <span class="kicker">Caso · Migración / Infraestructura</span>
+      <h1>BlueTechPort</h1>
+      <p class="lead">Sacamos su Drupal de un servidor bare-metal caro y frágil y lo llevamos a contenedores en un VPS, sin que la web dejara de responder.</p>
+      <div class="metric" style="border-top:1px dashed rgba(247,245,239,.3);padding-top:16px;display:flex;align-items:baseline;gap:10px">
+        <span class="big" style="color:var(--accent);font-size:1.8rem;font-weight:700">HTTP 200<span class="yh" style="font-family:'Fraunces',serif;font-style:italic;font-weight:500"> cero downtime</span></span>
+        <span class="lbl" style="color:rgba(247,245,239,.7);font-size:.9rem">funcional en VPS · reversión documentada</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STRIP -->
+<div class="strip">
+  <div class="wrap">
+    <span class="seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Funcional en VPS</span>
+    <span class="dot">·</span><span>Docker</span><span class="dot">·</span><span>Portainer</span><span class="dot">·</span><span>VPS</span><span class="dot">·</span><span>Drupal</span>
+  </div>
+</div>
+
+<!-- EL RETO -->
+<section>
+  <div class="wrap">
+    <div class="shead">
+      <span class="kicker">El reto</span>
+      <h2>Un Drupal en bare-metal, caro y frágil</h2>
+    </div>
+    <div class="prose">
+      <p>La web de BlueTechPort corría sobre Drupal en un servidor bare-metal de Clouding: <b>caro de mantener y frágil</b>, con poca tolerancia a fallos y difícil de reproducir si algo se rompía.</p>
+      <p>El objetivo era moverlo a una infraestructura más barata, reproducible y controlable, <b>sin arriesgar la web</b> durante el proceso ni quedarse sin vuelta atrás.</p>
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ HICIMOS -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="shead">
+      <span class="kicker">Qué hicimos</span>
+      <h2>Migración a Docker / Portainer en VPS</h2>
+    </div>
+    <div class="prose">
+      <p>Contenerizamos la aplicación y la llevamos a un <b>VPS gestionado con Docker y Portainer</b>. Preparamos el entorno completo antes de tocar nada en producción, para que el cambio fuera un salto controlado y no una apuesta.</p>
+    </div>
+    <div class="includes" style="margin-top:30px">
+      <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>3 imágenes Docker</b><p>La aplicación contenerizada y reproducible en cualquier máquina.</p></div></div>
+      <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Orquestación con Portainer</b><p>Gestión y despliegue de los contenedores sobre el VPS.</p></div></div>
+      <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>TLS premontado</b><p>El cifrado listo antes de conmutar, sin ventana de web insegura.</p></div></div>
+      <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Reversión documentada</b><p>Plan de vuelta atrás por escrito por si algo no encajaba.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EL RESULTADO -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="shead">
+      <span class="kicker">El resultado</span>
+      <h2>Funcional en VPS, sin caídas</h2>
+    </div>
+    <div class="prose">
+      <p>La web quedó <b>funcional en el VPS con HTTP 200 verificado</b> y <b>cero downtime</b> durante la migración. Movimos <b>130 MB de base de datos y 598 MB de ficheros</b> sin que el servicio se interrumpiera.</p>
+      <p>Y, como toda la operación quedó documentada con su reversión, el cambio nunca fue un punto de no retorno.</p>
+    </div>
+    <div class="strip" style="margin-top:30px;border-radius:18px">
+      <div class="wrap">
+        <span>Docker</span><span class="dot">·</span><span>Portainer</span><span class="dot">·</span><span>VPS</span><span class="dot">·</span><span>Drupal</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="contact" id="contacto" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact-card">
+      <div class="hero-grid"></div>
+      <div class="contact-inner">
+        <div>
+          <span class="kicker">¿Una infra cara o frágil?</span>
+          <h2>Te la migramos sin <span class="serif">caídas</span>.</h2>
+          <p class="lead">Cuéntanos cómo tienes montada la web hoy y te decimos en 48&nbsp;h cómo moverla y cuánto cuesta.</p>
+          <div class="reassure">
+            <div><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Respuesta en menos de 48 h</div>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Migraciones con reversión documentada</div>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> El código y la infra son tuyos</div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;justify-content:center;gap:16px">
+          <a href="/contacto/" class="pill pill--accent">Cuéntanos tu caso<span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+          <a href="/proyectos/" class="pill pill--ghost-light">Ver todos los proyectos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░░ FOOTER COMPLETO ░░░ -->
+<footer>
+  <div class="wrap">
+    <div>
+      <a href="/" class="brand" aria-label="Pareto"><svg><use href="/assets/logo-sprite.svg#logo-pareto"/></svg></a>
+      <p class="ftxt">Estudio de desarrollo de producto digital. Tecnología con criterio de negocio.</p>
+    </div>
+    <div class="col">
+      <h5>Servicios</h5>
+      <a href="/desarrollo-de-apps/">Apps a medida</a>
+      <a href="/software-a-medida/">Software a medida</a>
+      <a href="/integraciones/">Integraciones &amp; IA</a>
+      <a href="/desarrollo-ecommerce/">E-commerce</a>
+    </div>
+    <div class="col">
+      <h5>Estudio</h5>
+      <a href="/proyectos/">Proyectos</a>
+      <a href="/estudio/">Cómo trabajamos</a>
+      <a href="/contacto/">Contacto</a>
+    </div>
+    <div class="col">
+      <h5>Contacto</h5>
+      <a href="mailto:hola@paretoconversion.com">hola@paretoconversion.com</a>
+      <a href="/contacto/">Agenda una llamada</a>
+    </div>
+    <div class="legal">
+      <span>© 2026 Pareto · ICB Spain Investment SL</span>
+      <span><a href="/aviso-legal/" style="display:inline">Aviso legal</a> · <a href="/privacidad/" style="display:inline">Privacidad</a> · <a href="/cookies/" style="display:inline">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
