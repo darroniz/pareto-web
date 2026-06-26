@@ -259,6 +259,52 @@ footer .legal{width:100%;border-top:1px solid rgba(247,245,239,.12);margin-top:3
 footer--min{padding:40px 0}
 footer.footer--min .wrap{align-items:center;font-family:'Space Mono',monospace;font-size:.78rem}
 
+/* ---------- TECH LOGOS (monocromos, recolor por mask) ---------- */
+.tech-logos{display:flex;flex-wrap:wrap;gap:22px 34px;align-items:center;justify-content:center}
+.tech-logos i{display:block;width:34px;height:28px;background:var(--muted);opacity:.6;
+  -webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat;
+  transition:background .2s,opacity .2s}
+.tech-logos i:hover{background:var(--green);opacity:1}
+/* sobre fondo verde (hero/strip oscuro) */
+.on-dark .tech-logos i{background:var(--bone);opacity:.55}
+.on-dark .tech-logos i:hover{background:var(--accent);opacity:1}
+
+/* carrusel automático de logos (páginas generales: home, estudio) */
+.tech-marquee{overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.tech-marquee .track{display:flex;width:max-content;gap:54px;align-items:center;animation:marquee 40s linear infinite}
+.tech-marquee:hover .track{animation-play-state:paused}
+.tech-marquee i{flex:0 0 auto;display:block;width:38px;height:30px;background:var(--muted);opacity:.6;
+  -webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat;transition:background .2s,opacity .2s}
+.tech-marquee i:hover{background:var(--green);opacity:1}
+.on-dark.tech-marquee i,.on-dark .tech-marquee i{background:var(--bone);opacity:.55}
+.on-dark.tech-marquee i:hover,.on-dark .tech-marquee i:hover{background:var(--accent);opacity:1}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.tech-marquee .track{animation:none;flex-wrap:wrap;justify-content:center}}
+
+/* ---------- NAV: dropdown Servicios ---------- */
+.has-drop{position:relative}
+.has-drop>.dt{display:inline-flex;align-items:center;gap:.35em;cursor:pointer}
+.has-drop>.dt::after{content:"";width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .2s;opacity:.7}
+.has-drop:hover>.dt::after{transform:rotate(225deg) translateY(-1px)}
+.drop{position:absolute;top:calc(100% + 6px);left:50%;transform:translateX(-50%) translateY(6px);
+  background:var(--cream-card);border:1px solid rgba(0,66,37,.14);border-radius:16px;padding:10px;
+  display:grid;grid-template-columns:1fr 1fr;gap:2px;min-width:430px;
+  box-shadow:0 24px 50px -24px rgba(0,66,37,.45);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility .2s;z-index:60}
+.has-drop:hover .drop{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
+.drop a{display:block;padding:10px 12px;border-radius:10px;font-size:.9rem;font-weight:500;color:var(--ink);text-decoration:none;opacity:1;transition:background .15s,color .15s}
+.drop a small{display:block;font-weight:400;font-size:.76rem;color:var(--muted);margin-top:1px}
+.drop a:hover{background:var(--cream);color:var(--green)}
+.drop a:hover small{color:var(--green)}
+
+/* ---------- ILUSTRACIONES CONCEPTUALES (estilo Senda) ---------- */
+.ill{display:block;margin:0 auto;max-width:100%}
+.ill text{font-family:'Space Mono',monospace;fill:var(--green)}
+.ill .blk{fill:var(--accent);stroke:var(--green);stroke-width:1.2}
+.ill .base{stroke:var(--green);stroke-width:1.6;stroke-linecap:round}
+.ill .hl{fill:rgba(195,250,149,.5)}
+.illbox{padding:46px 0}
+.illbox .cap{text-align:center;color:#46564f;max-width:520px;margin:22px auto 0;font-size:.98rem}
+
 /* ---------- RESPONSIVE ---------- */
 @media(max-width:900px){
   .grid-3,.grid-2,.proofs,.how,.cases,.projects,.includes,.steps{grid-template-columns:repeat(2,1fr)}

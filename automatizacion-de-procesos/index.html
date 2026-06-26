@@ -68,8 +68,13 @@
 <div class="strip">
   <div class="wrap">
     <span class="seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Flujos desatendidos en producción</span>
-    <span class="dot">·</span><span>n8n</span><span class="dot">·</span><span>Make</span>
-    <span class="dot">·</span><span>Webhooks</span><span class="dot">·</span><span>IMAP/Email</span><span class="dot">·</span><span>Google Sheets</span><span class="dot">·</span><span>WhatsApp</span>
+    <div class="tech-logos">
+      <i style="--m:url(/assets/tech/n8n.svg)" aria-label="n8n"></i>
+      <i style="--m:url(/assets/tech/make.svg)" aria-label="Make"></i>
+      <i style="--m:url(/assets/tech/githubactions.svg)" aria-label="GitHub Actions"></i>
+      <i style="--m:url(/assets/tech/docker.svg)" aria-label="Docker"></i>
+      <i style="--m:url(/assets/tech/python.svg)" aria-label="Python"></i>
+    </div>
   </div>
 </div>
 
@@ -87,6 +92,29 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ILUSTRACIÓN: bloques que crecen (el coste de lo manual) -->
+<section class="illbox">
+  <div class="wrap">
+    <div class="center shead">
+      <span class="kicker">El coste de lo manual</span>
+      <h2>Una tarea suelta no se nota. Multiplicada por un mes, sí.</h2>
+    </div>
+    <svg class="ill" viewBox="0 0 880 330" width="760" role="img" aria-label="Lo que se hace a mano se acumula">
+      <defs><pattern id="cell" width="22" height="22" patternUnits="userSpaceOnUse"><rect width="22" height="22" fill="none" stroke="#004225" stroke-width="1"/></pattern></defs>
+      <rect class="blk" x="132" y="220" width="22" height="22"/><rect x="132" y="220" width="22" height="22" fill="url(#cell)"/>
+      <line class="base" x1="104" y1="246" x2="182" y2="246"/>
+      <text x="143" y="276" text-anchor="middle" font-size="14">UNA TAREA</text><text x="143" y="296" text-anchor="middle" font-size="14">SUELTA</text>
+      <rect class="blk" x="396" y="198" width="66" height="44"/><rect x="396" y="198" width="66" height="44" fill="url(#cell)"/>
+      <line class="base" x1="368" y1="246" x2="490" y2="246"/>
+      <text x="429" y="276" text-anchor="middle" font-size="14">A LO LARGO</text><text x="429" y="296" text-anchor="middle" font-size="14">DE UN DÍA</text>
+      <rect class="blk" x="660" y="44" width="88" height="198"/><rect x="660" y="44" width="88" height="198" fill="url(#cell)"/>
+      <line class="base" x1="632" y1="246" x2="776" y2="246"/>
+      <text x="704" y="276" text-anchor="middle" font-size="14">A LO LARGO</text><text x="704" y="296" text-anchor="middle" font-size="14">DE UN MES</text>
+    </svg>
+    <p class="cap">Copiar un dato cuesta segundos; hacerlo cada día, a lo largo de un mes, son horas de tu equipo y errores que aparecen cuando menos lo esperas. Eso es justo lo que un flujo desatendido te quita de encima.</p>
   </div>
 </section>
 
@@ -148,6 +176,23 @@
         <p>Flujo que recoge los leads de Meta, los filtra con criterios go/no-go y los lleva a WhatsApp y a una Google Sheet. El ROI de 12x es un objetivo estimado, pendiente de validar con el cliente.</p>
         <div class="metric"><span class="big">12x <span class="yh">ROI</span></span><span class="lbl">objetivo estimado, a confirmar</span></div>
       </article>
+    </div>
+  </div>
+</section>
+
+<!-- QUÉ SE AUTOMATIZA (contenido específico) -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="shead">
+      <span class="kicker">Qué se automatiza</span>
+      <h2>Procesos que dejan de hacerse a mano</h2>
+      <p>Si hoy alguien lo hace copiando y pegando entre pestañas, casi seguro se automatiza. Estos son los más habituales, con casos que ya corren.</p>
+    </div>
+    <div class="includes">
+      <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Enrutado de leads</b><p>Recoge leads de formularios o Meta, los filtra con reglas go/no-go y los reparte a CRM, WhatsApp y hoja. En INNN · Forma, con un ROI de 12x estimado, aún por confirmar.</p></div></div>
+      <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Cruces de datos</b><p>Mantiene al día dos sistemas que no se hablan, como el cruce diario Lead↔Oportunidad de Shabby &amp; Chic.</p></div></div>
+      <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Sincronización de inventario</b><p>Lee correos o feeds y actualiza el stock de forma idempotente, como en Impossible Parts: aunque un mensaje se procese dos veces, no duplica.</p></div></div>
+      <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Avisos y alertas</b><p>Te notifica por email o WhatsApp cuando algo entra, falla o cruza un umbral, para que nadie tenga que estar mirando.</p></div></div>
     </div>
   </div>
 </section>

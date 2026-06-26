@@ -62,8 +62,14 @@
 <div class="strip">
   <div class="wrap">
     <span class="seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Core Web Vitals impecables</span>
-    <span class="dot">·</span><span>Astro</span><span class="dot">·</span><span>TypeScript</span>
-    <span class="dot">·</span><span>Cloudflare</span><span class="dot">·</span><span>SEO-ready</span><span class="dot">·</span><span>SSG</span>
+    <div class="tech-logos">
+      <i style="--m:url(/assets/tech/astro.svg)" aria-label="Astro"></i>
+      <i style="--m:url(/assets/tech/react.svg)" aria-label="React"></i>
+      <i style="--m:url(/assets/tech/typescript.svg)" aria-label="TypeScript"></i>
+      <i style="--m:url(/assets/tech/nextdotjs.svg)" aria-label="Next.js"></i>
+      <i style="--m:url(/assets/tech/wordpress.svg)" aria-label="WordPress"></i>
+      <i style="--m:url(/assets/tech/anthropic.svg)" aria-label="Claude"></i>
+    </div>
   </div>
 </div>
 
@@ -156,6 +162,34 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> La velocidad por IA es más web por tu presupuesto, no menos calidad.</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> El código es tuyo. Sin cajas negras ni dependencia eterna de nosotros.</li>
         </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ ASTRO / ESTÁTICO = VELOCIDAD + SEO -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="shead">
+      <span class="kicker">Por qué estático</span>
+      <h2>Por qué una web estática carga antes y posiciona mejor</h2>
+      <p>Una web sobre Astro se genera una vez y se sirve como HTML plano desde la red de Cloudflare. No hay base de datos consultándose en cada visita ni decenas de plugins pintando la página: el navegador recibe el contenido listo. En Zunzun lo llevamos al extremo, migrando un WordPress a un topical map de 271 páginas estáticas pensadas para escalar en orgánico.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <span class="lab">Velocidad</span>
+        <h3>HTML servido al instante</h3>
+        <p>Sin PHP ejecutándose en cada carga: la página llega ya construida desde el borde de Cloudflare, cerca del usuario. El TTFB y el First Contentful Paint bajan de forma notable frente a una plantilla con plugins.</p>
+      </div>
+      <div class="card">
+        <span class="lab">Core Web Vitals</span>
+        <h3>LCP, CLS e INP en verde</h3>
+        <p>Astro envía cero JavaScript por defecto y solo hidrata lo imprescindible. Eso se traduce en los Core Web Vitals que Google usa como señal de experiencia: las métricas reales, no una nota de velocidad cualquiera.</p>
+      </div>
+      <div class="card">
+        <span class="lab">SEO</span>
+        <h3>Indexable desde la base</h3>
+        <p>HTML semántico, metadatos, sitemap y schema desde el primer render, sin depender de que un plugin pinte el contenido. Una estructura limpia que escala a cientos de páginas sin penalizar la velocidad.</p>
       </div>
     </div>
   </div>

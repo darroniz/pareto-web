@@ -65,8 +65,17 @@
 <div class="strip">
   <div class="wrap">
     <span class="seal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Sincronizaciones en producción</span>
-    <span class="dot">·</span><span>Holded</span><span class="dot">·</span><span>Zoho CRM</span><span class="dot">·</span><span>HubSpot</span>
-    <span class="dot">·</span><span>Odoo</span><span class="dot">·</span><span>WooCommerce</span><span class="dot">·</span><span>APIs a medida</span>
+    <span class="dot">·</span>
+    <div class="tech-logos">
+      <i style="--m:url(/assets/tech/n8n.svg)" aria-label="n8n"></i>
+      <i style="--m:url(/assets/tech/make.svg)" aria-label="Make"></i>
+      <i style="--m:url(/assets/tech/zoho.svg)" aria-label="Zoho"></i>
+      <i style="--m:url(/assets/tech/hubspot.svg)" aria-label="HubSpot"></i>
+      <i style="--m:url(/assets/tech/odoo.svg)" aria-label="Odoo"></i>
+      <i style="--m:url(/assets/tech/githubactions.svg)" aria-label="GitHub Actions"></i>
+      <i style="--m:url(/assets/tech/docker.svg)" aria-label="Docker"></i>
+      <i style="--m:url(/assets/tech/postgresql.svg)" aria-label="PostgreSQL"></i>
+    </div>
   </div>
 </div>
 
@@ -103,6 +112,31 @@
       <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Desatendido y monitorizado</b><p>Cron o GitHub Actions corriendo solos, con registro y aviso si algo se rompe.</p></div></div>
       <div class="inc"><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Saneamiento de catálogo</b><p>De paso ordenamos los datos: en Futureface corregimos 17 productos cruzados.</p></div></div>
     </div>
+  </div>
+</section>
+
+<!-- ILUSTRACIÓN: hub de integraciones -->
+<section class="illbox">
+  <div class="wrap">
+    <div class="center shead">
+      <span class="kicker">Un solo punto de sincronía</span>
+      <h2>Tu stack hablando entre sí, sin copiar y pegar.</h2>
+    </div>
+    <svg class="ill" viewBox="0 0 720 300" width="680" role="img" aria-label="Conectamos tus sistemas">
+      <line class="base" x1="360" y1="150" x2="115" y2="74"/><line class="base" x1="360" y1="150" x2="605" y2="74"/>
+      <line class="base" x1="360" y1="150" x2="115" y2="226"/><line class="base" x1="360" y1="150" x2="605" y2="226"/>
+      <circle class="blk" cx="237" cy="112" r="5"/><circle class="blk" cx="483" cy="112" r="5"/>
+      <circle class="blk" cx="237" cy="188" r="5"/><circle class="blk" cx="483" cy="188" r="5"/>
+      <g fill="none" stroke="#004225" stroke-width="1.4">
+        <rect x="60" y="50" width="110" height="48" rx="8"/><rect x="550" y="50" width="110" height="48" rx="8"/>
+        <rect x="60" y="202" width="110" height="48" rx="8"/><rect x="550" y="202" width="110" height="48" rx="8"/>
+      </g>
+      <text x="115" y="79" text-anchor="middle" font-size="14">ERP</text><text x="605" y="79" text-anchor="middle" font-size="14">CRM</text>
+      <text x="115" y="231" text-anchor="middle" font-size="14">TIENDA</text><text x="605" y="231" text-anchor="middle" font-size="14">APIs</text>
+      <circle cx="360" cy="150" r="44" fill="#004225"/>
+      <text x="360" y="155" text-anchor="middle" font-size="14" style="fill:#f6f7f2">PARETO</text>
+    </svg>
+    <p class="cap">Construimos el punto central que mantiene Holded, tu CRM, tu tienda y tus APIs sincronizados. Tú dejas de mover datos a mano; nosotros monitorizamos que no se rompa.</p>
   </div>
 </section>
 
@@ -144,6 +178,35 @@
         <div class="case-top"><h3>Nativo · Federópticos</h3><span class="tag">Web → Zoho CRM · en curso</span></div>
         <p>Captura web hacia Zoho CRM con atribución GCLID/UTM y 238 centros mapeados. Validado en Postman; pendiente de que el cliente lo integre en su entorno.</p>
         <div class="metric"><span class="big">238 <span class="yh">centros</span></span><span class="lbl">mapeados · validado en Postman</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SISTEMAS QUE INTEGRAMOS Y CÓMO (detalle concreto) -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="shead">
+      <span class="kicker">Qué integramos y cómo</span>
+      <h2>Por API cuando la hay; por automatización fiable cuando no.</h2>
+      <p>Conectamos los sistemas con los que ya trabajas. Si exponen API, vamos por ahí; si no, los automatizamos igual con Playwright, sin que el "no tiene API" frene el proyecto.</p>
+    </div>
+    <div class="cases">
+      <article class="case">
+        <div class="case-top"><h3>Holded</h3><span class="tag">ERP · facturación</span></div>
+        <p>Clientes, facturas y productos sincronizados por su API. En Civic mapeamos 33 campos entre Holded y su intranet, con plugin propio corriendo en producción.</p>
+      </article>
+      <article class="case">
+        <div class="case-top"><h3>Zoho · HubSpot</h3><span class="tag">CRM · leads</span></div>
+        <p>Leads de tu web al CRM con atribución GCLID/UTM, para saber de dónde viene cada uno. En Nativo·Federópticos, 238 centros mapeados hacia Zoho (en curso).</p>
+      </article>
+      <article class="case">
+        <div class="case-top"><h3>Odoo y otras APIs</h3><span class="tag">ERP · a medida</span></div>
+        <p>Odoo, WooCommerce y cualquier herramienta con API propia, conectadas con tu web y tus formularios. Mapeo de campos real, no un volcado a ciegas.</p>
+      </article>
+      <article class="case">
+        <div class="case-top"><h3>Sistemas sin API</h3><span class="tag">Playwright</span></div>
+        <p>Cuando el sistema no expone datos, lo automatizamos igual con Playwright + GitHub Actions: desatendido, con registro de cada sincronización y aviso si algo se rompe. En Futureface, así dejamos el catálogo con 0 fugas entre marcas.</p>
       </article>
     </div>
   </div>

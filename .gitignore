@@ -4,3 +4,6 @@ _PARTIALS.html
 *.log
 node_modules/
 .vscode/
+_demo.html
+_demo_open.html
+_SNIPPETS.html
